@@ -1,0 +1,3 @@
+[submodule "submodules/micro-app-common-vue"]
+	path = submodules/micro-app-common-vue
+	url = https://github.com/caopeng34/micro-app-common-vue.git

@@ -50,6 +50,11 @@ module.exports = {
     }
   },
   configureWebpack: {
+    resolve: {
+      alias: {
+        microcommon: path.resolve(__dirname,'submodules/micro-app-common-vue')
+      }
+    },
     plugins: [
       new CompressionWebpackPlugin({
         filename: '[path].gz[query]',
