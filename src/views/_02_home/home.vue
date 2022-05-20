@@ -30,7 +30,7 @@ export default {
     },
     // 模块1
     onModule1() {
-      this.$router.push({path: '/submodule1/ceshi99/ceshi1'})
+      this.$router.push({path: `/${process.env.VUE_APP_MICROAPPBASEROUTE}/ceshi99/ceshi1`})
     },
   }
 }

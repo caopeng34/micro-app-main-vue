@@ -22,8 +22,13 @@ export default {
                     phone: '15230834693'
                 }
                 commit('updateuserinfo', res, {root: true})
-                // resolve('home')
-                resolve('')
+                // 判断当前页面，根路径或加载页则跳转首页，否则不跳转
+                let currentpages = window.location.href.split('#')
+                if (currentpages.length < 2 || currentpages[1] === '' || currentpages[1] === '/' || currentpages[1] === '/firstpage') {
+                    resolve('home')
+                } else {
+                    resolve('')
+                }
             })
         },
         // 登录接口

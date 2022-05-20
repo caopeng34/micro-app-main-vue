@@ -26,11 +26,11 @@ export default {
   data() {
     return {
       // -- 基座应用设置 --
-      microappname: 'submoduleapp1',            // 子应用名称
-      microappurl: 'http://localhost:11002/',   // 子应用地址
-      microappbaseroute: '/submodule1/',        // 子应用的基础路由
+      microappname: process.env.VUE_APP_MICROAPPNAME,                           // 子应用名称
+      microappurl: process.env.VUE_APP_MICROAPPURL,                             // 子应用地址
+      microappbaseroute: '/' + process.env.VUE_APP_MICROAPPBASEROUTE + '/',     // 子应用的基础路由
       // -- 基座应用向子应用发送数据 --
-      dataForChild: {},                         // data只接受对象类型，数据变化时会重新发送
+      dataForChild: {},                                                         // data只接受对象类型，数据变化时会重新发送
     }
   },
   created() {

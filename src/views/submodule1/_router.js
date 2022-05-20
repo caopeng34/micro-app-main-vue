@@ -1,6 +1,6 @@
 const subrouters = {
-    name: "submodule1",
-    path: "/submodule1/*",
+    name: `${process.env.VUE_APP_MICROAPPBASEROUTE}`,
+    path: `/${process.env.VUE_APP_MICROAPPBASEROUTE}/*`,
     component: () => import("./index")
 };
 

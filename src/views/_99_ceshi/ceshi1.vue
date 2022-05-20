@@ -24,6 +24,7 @@ export default {
   created() {
     // 设置路由返回名（公共mixins中）
     this.returnroute = 'home02/home'
+    console.log(this.currentroute)
   },
 }
 </script>
