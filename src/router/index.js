@@ -5,6 +5,7 @@ Vue.use(VueRouter)
 import login01 from "../views/_01_login/_router"
 import home02 from "../views/_02_home/_router"
 import ceshi99 from "../views/_99_ceshi/_router"
+import submodule1 from "../views/submodule1/_router"
 
 const routes = [
     {
@@ -19,6 +20,7 @@ const routes = [
     login01,        // 登录业务
     home02,         // 首页业务
     ceshi99,        // 测试业务
+    submodule1,     // 子模块1
 ]
 
 const router = new VueRouter({

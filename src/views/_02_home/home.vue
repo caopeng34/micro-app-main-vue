@@ -3,11 +3,12 @@
     <van-grid :column-num="3">
       <van-grid-item icon="photo-o" text="我的" @click="onMypage"/>
       <van-grid-item icon="photo-o" text="测试1" @click="onCeshi1"/>
-      <van-grid-item icon="photo-o" text="文字" />
+      <van-grid-item icon="photo-o" text="模块1" @click="onModule1"/>
       <van-grid-item icon="photo-o" text="文字" />
       <van-grid-item icon="photo-o" text="文字" />
       <van-grid-item icon="photo-o" text="文字" />
     </van-grid>
+    <img style="margin: 20vw;width: 60vw;" src="../../assets/img/logo.png">
   </div>
 </template>
 
@@ -26,6 +27,10 @@ export default {
     // 测试页面
     onCeshi1() {
       this.$router.push({name: 'ceshi99/ceshi1'})
+    },
+    // 模块1
+    onModule1() {
+      this.$router.push({path: '/submodule1/ceshi99/ceshi1'})
     },
   }
 }

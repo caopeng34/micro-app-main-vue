@@ -14,11 +14,11 @@ export default {
     async enterSystem(_this) {
       _this.$store.dispatch("login01/getuserinfo", {}).then(res => {
         if (res) {
-          if (res === 'home') {        // 跳转首页
+          if (res === 'home') {         // 跳转首页
             _this.$router.push({name: _this.$store.state.homepage})
           } else if (res === 'login') { // 跳转登录
             _this.$router.push({name: _this.$store.state.loginpage})
-          }
+          }                             // 其他不处理
         }
       });
     }

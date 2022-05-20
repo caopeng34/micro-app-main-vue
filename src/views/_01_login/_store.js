@@ -22,7 +22,8 @@ export default {
                     phone: '15230834693'
                 }
                 commit('updateuserinfo', res, {root: true})
-                resolve('home')
+                // resolve('home')
+                resolve('')
             })
         },
         // 登录接口

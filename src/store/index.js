@@ -9,16 +9,18 @@ import ceshi99 from "../views/_99_ceshi/_store";
 
 export default new Vuex.Store({
   state: {
+    // -- 基础信息 --
     accesstoken: ls.get("accesstoken") || "",       // token
     userinfo: ls.get("userinfo") || {},             // 用户信息
     username: ls.get("uword1") || "",               // 登录用户账号
     password: ls.get("uword2") || "",               // 登录用户密码
+    // -- 其他 --
     failuretime: 1000 * 60 * 60 * 24 * 7,           // localstorage失效时间，配合storage使用
     // -- 页面 --
-    loginpage: 'login01/login' || '',               // 登录路由
-    registerpage: 'login01/register' || '',         // 注册路由
-    homepage: 'home02/home' || '',                  // 首页路由
-    mypage: 'home02/mypage' || '',                  // 我的路由
+    loginpage: 'login01/login' || '',              // 登录路由
+    registerpage: 'login01/register' || '',        // 注册路由
+    homepage: 'home02/home' || '',                 // 首页路由
+    mypage: 'home02/mypage' || '',                 // 我的路由
 
   },
   mutations: {
