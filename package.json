@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "analyzer": "cross-env use_analyzer=true pnpm run build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "serveapi": "node simulate-api/main.js"
   },
   "dependencies": {
     "@micro-zoe/micro-app": "^0.8.5",
